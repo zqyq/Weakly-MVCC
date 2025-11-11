@@ -1,6 +1,5 @@
-#  Bin Li, Daijie Chen, and Qi Zhang.
 # WSCF-MVCC: Weakly-supervised  Calibration-free Multi-view Crowd Counting. PRCV 2025
-
+## Bin Li, Daijie Chen, and Qi Zhang
 ![Pipeline](assets/pipeline.png "Pipeline")
 
 ## Abstract
@@ -8,7 +7,7 @@ Multi-view crowd counting can effectively mitigate occlusion issues that commonl
 
 
 ## Poster 
-AAAI 2024 poster:
+PRCV 2025 poster:
 ![Poster](assets/poster.png "Poster")
 
 ## Overview
@@ -18,25 +17,16 @@ We release the PyTorch code for the WSCF-MVCC, a weakly-supervised calibration-f
 - [Dependencies](#dependencies)
 - [Data Preparation](#Data Preparation)
 - [Training](#Training)
-- [Perspective transformation](#Perspective transformation)
 
 
 ## Dependencies
-- python
-- pytorch & torchvision
-- numpy
-- matplotlib
-- pillow
-- opencv-python
-- kornia
-- tqdm
-- h5py
-- argparse
+see requirements.txt or environment.yml
 
 ## Data Preparation
-In the code implementation, the root path of the four main datasets is defined as ```/mnt/d/data```. Of course,
-it can be changed.
-When you apply the method to your datasets or other paths, the root path should look like this:
+datasets are listed in ```/mnt/d/data```, and download links are as follow:
+* [CVCS](https://github.com/zqyq/Cross-view-cross-scene-multi-view-counting-CVPR2021)
+* [CityStreet](https://drive.google.com/drive/folders/11hK1REG3P35S9ANXk1YB7C1-_SS_LQGJ)
+* [PETS2009](https://drive.google.com/drive/folders/11hK1REG3P35S9ANXk1YB7C1-_SS_LQGJ)
 ```
 /mnt/d/data/
 |__CVCS
@@ -47,42 +37,23 @@ When you apply the method to your datasets or other paths, the root path should 
     |__...
 ```
 ## Training
- During the training phase, we need to train the model in 3 stages, the feature extractor is shared across all camera views, i.e., ResNet18 and VGG16. 
+The training process of this method is carried out in stages. First, we train the SVCC and the homography estimation module respectively. Then fix both of them and train the remaining MWE and MVCE modules.
+### SVCC
+```shell
+bash script/train-singleview.sh
+```
+### CityStreet
+```shell
+bash script/train-multiview-city.sh
+```
+### PETS2009
+```shell
+bash script/train-multiview-pets.sh
+```
 
-Take training a detector on CVCS dataset as an example, to train the final detector, run the following script in order.
-```shell script
-python main.py -d cvcs --variant 2D 
-```
-After obtaining the trained 2D feature extractor, we set the path of the extractor as ```args.pretrain```, 
-assuming it is "/trained_2D.pth". Next, we train the detector for single-view prediction.
-```
-python main.py -d cvcs --variant 2D_SVP --pretrain /trained_2D.pth
-```
-Samely, when the single-view detector is trained well, assuming it is ```/trained_2D_SVP.pth```. Next, 
-we train the final detector.
-```
-python main.py -d cvcs --variant 2D_SVP_VCW --pretrain /trained_2D_SVP.pth
-```
-On Wildtrack and MultiviewX, we take the final detector trained on CVCS as the model, then test it with fine-tuning 
-and domain-adaptation techniques.
-
-
-## Pretrained models
-You can download the checkpoints at this link.
 
 ## Acknowledgement
-This work was supported in parts by NSFC (62202312, 62161146005, U21B2023, U2001206), DEGP Innovation Team 
-(2022KCXTD025), CityU Strategic Research Grant (7005665), and Shenzhen Science and Technology Program 
-(KQTD20210811090044003, RCJC20200714114435012, JCYJ20210324120213036).
+This work was partially supported by the National Natural Science Foundation of China (NSFC) 62202312, DEGP Innovation Team (2022KCXTD025), Scientific Foundation for Youth Scholars of Shenzhen University, Shenzhen University Teaching Reform Key Program (JG2024018), and Scientific Development Funds from Shenzhen University.
 
 ## Reference
-```
-@inproceedings{MVD24,
-title={Multi-view People Detection in Large Scenes via Supervised View-wise Contribution Weighting},
-author={Qi Zhang and Yunfei Gong and Daijie Chen and Antoni B. Chan and Hui Huang},
-booktitle={AAAI Conference on Artificial Intelligence},
-pages={7242--7250},
-year={2024},
-}
-
-```
+...
