@@ -12,12 +12,6 @@ PRCV 2025 poster:
 
 ## Overview
 We release the PyTorch code for the WSCF-MVCC, a weakly-supervised calibration-free multi-view crowd counting method (WSCF-MVCC). 
- 
-## Content
-- [Dependencies](#dependencies)
-- [Data Preparation](#Data Preparation)
-- [Training](#Training)
-
 
 ## Dependencies
 see requirements.txt or environment.yml
@@ -57,3 +51,4 @@ This work was partially supported by the National Natural Science Foundation of 
 
 ## Reference
 ...
+
