@@ -1,0 +1,10 @@
+
+
+name: tmp, loss: 2.8611137116285654, logdir: logs/pets_frame/pets/debug/2025-05-22_03-49-19, MAE: 13.407, NAE: 0.476, MSE: 15.325, Time: 29.093
+name: single_view_with_rankLossRatio10_lr5e, loss: 2.8595156807743334,                logdir: logs/pets_frame/pets/debug/2025-05-22_04-08-32, MAE: 13.867, NAE: 0.493, MSE: 15.779, Time: 17.156
+name: single_view_with_rankLossRatio5_lr1e-7, loss: 2.865058296648621,                logdir: logs/pets_frame/pets/debug/2025-05-22_04-08-37, MAE: 13.512, NAE: 0.480, MSE: 15.415, Time: 18.012
+name: single_view_with_rankLossRatio5_lr5e-7, loss: 2.856020112106722,                logdir: logs/pets_frame/pets/debug/2025-05-22_04-08-43, MAE: 13.698, NAE: 0.487, MSE: 15.586, Time: 18.353
+name: single_view_with_rankLossRatio10_lr1e-7, loss: 2.865729800850078,               logdir: logs/pets_frame/pets/debug/2025-05-22_04-08-50, MAE: 13.462, NAE: 0.478, MSE: 15.378, Time: 21.443
+name: single_view_with_rankLossRatio5_lr5e-7_onlySingleView, loss: 2.859208862111911, logdir: logs/pets_frame/pets/debug/2025-05-22_04-08-58, MAE: 13.546, NAE: 0.480, MSE: 15.456, Time: 22.836
+
+logdir: logs/pets_frame/pets/debug/2025-05-22_07-06-30, MAE: 8.426, NAE: 0.606, MSE: 10.254, name: single_view_with_rankLossRatio1_lr5e-7_withAugmentation, loss: 2.849985826676078, Time: 16.740
