@@ -1,7 +1,7 @@
 #  Bin Li, Daijie Chen, and Qi Zhang.
 # WSCF-MVCC: Weakly-supervised  Calibration-free Multi-view Crowd Counting. PRCV 2025
 
-![Pipeline](assets/Pipeline.png "Pipeline")
+![Pipeline](assets/pipeline.png "Pipeline")
 
 ## Abstract
 Multi-view crowd counting can effectively mitigate occlusion issues that commonly arise in single-image crowd counting. Existing deep-learning multi-view crowd counting methods project different camera view images onto a common space to obtain ground-plane density maps, requiring abundant and costly crowd annotations and camera calibrations. Hence, calibration-free methods are proposed that do not require camera calibrations and scene-level crowd annotations. However, existing calibration-free methods still require expensive image-level crowd annotations for training the single-view counting module. Thus, in this paper, we propose a weakly-supervised calibration-free multi-view crowd counting method (WSCF-MVCC), directly using crowd count as supervision for the single-view counting module rather than density maps constructed from crowd annotations. Instead, a self-supervised ranking loss that leverages multi-scale priors is utilized to enhance the model’s perceptual ability without additional annotation costs. What’s more, the proposed model leverages semantic information to achieve a more accurate view matching and, consequently, a more precise scene-level crowd count estimation. The proposed method outperforms the state-of-the-art methods on three widely used multi-view counting datasets under weakly supervised settings, indicating that it is more suitable for practical deployment compared with calibrated methods.
@@ -84,4 +84,5 @@ booktitle={AAAI Conference on Artificial Intelligence},
 pages={7242--7250},
 year={2024},
 }
+
 ```
