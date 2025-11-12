@@ -1,5 +1,5 @@
 # WSCF-MVCC: Weakly-supervised  Calibration-free Multi-view Crowd Counting. PRCV 2025
-## Bin Li, Daijie Chen, and Qi Zhang
+## Bin Li, Daijie Chen, and Qi Zhang*
 ![Pipeline](assets/pipeline.png "Pipeline")
 
 ## Abstract
@@ -51,4 +51,5 @@ This work was partially supported by the National Natural Science Foundation of 
 
 ## Reference
 ...
+
 
