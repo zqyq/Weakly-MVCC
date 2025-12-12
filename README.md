@@ -50,12 +50,14 @@ bash script/train-multiview-pets.sh
 This work was partially supported by the National Natural Science Foundation of China (NSFC) 62202312, DEGP Innovation Team (2022KCXTD025), Scientific Foundation for Youth Scholars of Shenzhen University, Shenzhen University Teaching Reform Key Program (JG2024018), and Scientific Development Funds from Shenzhen University.
 
 ## Reference
+```
 @article{li2025wscf,
   title={WSCF-MVCC: Weakly-supervised Calibration-free Multi-view Crowd Counting},
   author={Li, Bin and Chen, Daijie and Zhang, Qi},
   journal={PRCV},
   year={2025}
 }
+```
 
 
 
