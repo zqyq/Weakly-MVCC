@@ -71,9 +71,9 @@ terminaltables==3.1.10
 thop==0.1.1.post2209072238
 threadpoolctl==3.2.0
 tifffile==2024.7.2
-torch @ file:///mnt/d/project/lbtask/torch-1.12.1%2Bcu113-cp39-cp39-linux_x86_64.whl#sha256=01854806973840bdf3fc0efc84811539cb37101afd6498ef24a7d7f1af3cb010
-torchinfo==1.8.0
-torchvision @ file:///mnt/d/project/lbtask/torchvision-0.13.1%2Bcu113-cp39-cp39-linux_x86_64.whl#sha256=2fa135937c65b1bb8e3bf8f620c4fb755c0cd02b1f57ba1d6f9c09467a9b70cf
+//torch @ file:///mnt/d/project/lbtask/torch-1.12.1%2Bcu113-cp39-cp39-linux_x86_64.whl#sha256=01854806973840bdf3fc0efc84811539cb37101afd6498ef24a7d7f1af3cb010
+//torchinfo==1.8.0
+//torchvision @ file:///mnt/d/project/lbtask/torchvision-0.13.1%2Bcu113-cp39-cp39-linux_x86_64.whl#sha256=2fa135937c65b1bb8e3bf8f620c4fb755c0cd02b1f57ba1d6f9c09467a9b70cf
 tqdm==4.66.1
 traitlets==5.10.0
 triton==2.0.0
