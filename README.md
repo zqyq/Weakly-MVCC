@@ -51,7 +51,7 @@ This work was partially supported by the National Natural Science Foundation of 
 
 ## Reference
 ```
-@inproceedings{10.1007/978-981-95-5755-4_6,
+@inproceedings{li2025wscf,
 author = {Li, Bin and Chen, Daijie and Zhang, Qi},
 title = {WSCF-MVCC: Weakly-Supervised Calibration-Free Multi-view Crowd Counting},
 year = {2026},
