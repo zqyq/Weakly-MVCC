@@ -52,20 +52,13 @@ This work was partially supported by the National Natural Science Foundation of 
 ## Reference
 ```
 @inproceedings{li2025wscf,
-author = {Li, Bin and Chen, Daijie and Zhang, Qi},
-title = {WSCF-MVCC: Weakly-Supervised Calibration-Free Multi-view Crowd Counting},
-year = {2026},
-isbn = {978-981-95-5754-7},
-publisher = {Springer-Verlag},
-address = {Berlin, Heidelberg},
-url = {https://doi.org/10.1007/978-981-95-5755-4_6},
-doi = {10.1007/978-981-95-5755-4_6},
-abstract = {Multi-view crowd counting can effectively mitigate occlusion issues that commonly arise in single-image crowd counting. Existing deep-learning multi-view crowd counting methods project different camera view images onto a common space to obtain ground-plane density maps, requiring abundant and costly crowd annotations and camera calibrations. Hence, calibration-free methods are proposed that do not require camera calibrations and scene-level crowd annotations. However, existing calibration-free methods still require expensive image-level crowd annotations for training the single-view counting module. Thus, in this paper, we propose a weakly-supervised calibration-free multi-view crowd counting method (WSCF-MVCC), directly using crowd count as supervision for the single-view counting module rather than density maps constructed from crowd annotations. Instead, a self-supervised ranking loss that leverages multi-scale priors is utilized to enhance the model’s perceptual ability without additional annotation costs. What’s more, the proposed model leverages semantic information to achieve a more accurate view matching and, consequently, a more precise scene-level crowd count estimation. The proposed method outperforms the state-of-the-art methods on three widely used multi-view counting datasets under weakly supervised settings, indicating that it is more suitable for practical deployment compared with calibrated methods.},
-booktitle = {Pattern Recognition and Computer Vision: 8th Chinese Conference, PRCV 2025, Shanghai, China, October 15-18, 2025, Proceedings, Part XVI},
-pages = {83–98},
-numpages = {16},
-keywords = {Multi-view, Crowd counting, Weakly-supervised},
-location = {Shanghai, China}
+	author="Li, Bin
+	and Chen, Daijie
+	and Zhang, Qi",
+	title="WSCF-MVCC: Weakly-Supervised Calibration-Free Multi-view Crowd Counting",
+	booktitle="Chinese Conference on Pattern Recognition and Computer Vision",
+	year="2026",
+	pages="83--98"
 }
 ```
 
