@@ -51,14 +51,20 @@ This work was partially supported by the National Natural Science Foundation of 
 
 ## Reference
 ```
-@inproceedings{li2025wscf,
-	author="Li, Bin
-	and Chen, Daijie
-	and Zhang, Qi",
-	title="WSCF-MVCC: Weakly-Supervised Calibration-Free Multi-view Crowd Counting",
-	booktitle="Chinese Conference on Pattern Recognition and Computer Vision",
-	year="2026",
-	pages="83--98"
+@inproceedings{10.1007/978-981-95-5755-4_6,
+author = {Li, Bin and Chen, Daijie and Zhang, Qi},
+title = {WSCF-MVCC: Weakly-Supervised Calibration-Free Multi-view Crowd Counting},
+year = {2026},
+isbn = {978-981-95-5754-7},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-981-95-5755-4_6},
+doi = {10.1007/978-981-95-5755-4_6},
+booktitle = {Pattern Recognition and Computer Vision: 8th Chinese Conference, PRCV 2025, Shanghai, China, October 15-18, 2025, Proceedings, Part XVI},
+pages = {83–98},
+numpages = {16},
+keywords = {Multi-view, Crowd counting, Weakly-supervised},
+location = {Shanghai, China}
 }
 ```
 
